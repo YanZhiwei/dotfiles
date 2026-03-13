@@ -54,6 +54,7 @@
             "command": { "action": "resizePane", "direction": "down" },
             "id": "User.resizePane.down"
         },
+        { "command": "togglePaneZoom", "id": "User.togglePaneZoom" },
         { "command": "closePane", "id": "User.closePane" },
         { "command": "newTab", "id": "User.newTab" },
         { "command": "nextTab", "id": "User.nextTab" },
@@ -74,6 +75,7 @@
         { "id": "User.resizePane.right",      "keys": "alt+shift+right" },
         { "id": "User.resizePane.up",         "keys": "alt+shift+up" },
         { "id": "User.resizePane.down",       "keys": "alt+shift+down" },
+        { "id": "User.togglePaneZoom",        "keys": "ctrl+shift+z" },
         { "id": "User.closePane",             "keys": "ctrl+shift+w" },
         { "id": "User.newTab",                "keys": "ctrl+t" },
         { "id": "User.nextTab",               "keys": "ctrl+tab" },
@@ -99,7 +101,9 @@
             "padding": "10, 8, 10, 8",
             "scrollbarState": "hidden",
             "startingDirectory": "%USERPROFILE%",
-            "cursorShape": "bar"
+            "cursorShape": "bar",
+            "suppressApplicationTitle": true,
+            "bellStyle": "taskbar"
         },
         "list":
         [
@@ -109,7 +113,11 @@
                 "commandline": "C:\\Program Files\\Git\\bin\\bash.exe -i -l",
                 "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
                 "startingDirectory": "%USERPROFILE%",
-                "hidden": false
+                "hidden": false,
+                "env": {
+                    "LANG": "zh_CN.UTF-8",
+                    "LC_ALL": "zh_CN.UTF-8"
+                }
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -179,6 +187,5 @@
         }
     ],
     "theme": "system",
-    "themes": [],
-    "windowingBehavior": "useAnyExisting"
+    "themes": []
 }

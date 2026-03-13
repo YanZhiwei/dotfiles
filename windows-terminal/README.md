@@ -56,6 +56,8 @@ winget install Git.Git
 winget install Microsoft.CascadiaCode
 ```
 
+> 不再依赖 Nerd Font 变体（`Cascadia Code NF`），使用官方 `Cascadia Code` 即可。
+
 ### 第二步：复制配置文件
 
 **方式 A：手动复制（推荐）**
@@ -93,6 +95,7 @@ Copy-Item "D:\Repos\YanZhiwei\dotfiles\windows-terminal\settings.json" $wtPath -
 
 重启 Windows Terminal，确认：
 - [ ] 默认打开 Git Bash
+- [ ] Git Bash 启动无报错（无 starship 相关错误）
 - [ ] 亮色模式下配色为 GitHub Light，暗色模式下为 GitHub Dark
 - [ ] 切换 Windows 系统主题后，Terminal 配色自动跟随
 - [ ] `Ctrl+Shift+D` 分割窗格后路径与当前一致
