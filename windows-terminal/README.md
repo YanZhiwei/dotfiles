@@ -9,7 +9,9 @@
 |------|----|
 | 默认 Shell | Git Bash |
 | 字体 | Cascadia Code 13px，启用连字 |
-| 配色 | Catppuccin Mocha（深紫调） |
+| 配色（亮色） | GitHub Light（跟随系统自动切换） |
+| 配色（暗色） | GitHub Dark（跟随系统自动切换） |
+| 窗口主题 | 跟随系统亮/暗模式（`theme: system`） |
 | 背景 | Acrylic 磨砂透明（96%） |
 | 光标 | Bar（竖线，更精准） |
 | 滚动条 | 隐藏（更简洁） |
@@ -17,8 +19,8 @@
 ### 快捷键
 | 操作 | 快捷键 |
 |------|--------|
-| 垂直分割（左\|右） | `Ctrl+Shift+D` |
-| 水平分割（上/下） | `Ctrl+Shift+E` |
+| 垂直分割（左\|右，保持当前路径） | `Ctrl+Shift+D` |
+| 水平分割（上/下，保持当前路径） | `Ctrl+Shift+E` |
 | 在窗格间移动焦点 | `Alt+方向键` |
 | 调整窗格大小 | `Alt+Shift+方向键` |
 | 关闭当前窗格 | `Ctrl+Shift+W` |
@@ -91,8 +93,9 @@ Copy-Item "D:\Repos\YanZhiwei\dotfiles\windows-terminal\settings.json" $wtPath -
 
 重启 Windows Terminal，确认：
 - [ ] 默认打开 Git Bash
-- [ ] 配色为深紫色 Catppuccin Mocha
-- [ ] `Ctrl+Shift+D` 可以分割窗格
+- [ ] 亮色模式下配色为 GitHub Light，暗色模式下为 GitHub Dark
+- [ ] 切换 Windows 系统主题后，Terminal 配色自动跟随
+- [ ] `Ctrl+Shift+D` 分割窗格后路径与当前一致
 - [ ] `Alt+方向键` 可以在窗格间跳转
 
 ---
